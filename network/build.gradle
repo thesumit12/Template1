@@ -1,0 +1,20 @@
+apply from: "../gradle/submodule.gradle"
+
+dependencies {
+
+    implementation project(path: ':common')
+    implementation project(path: ':database')
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1"
+
+    // Retrofit Lib
+    api "com.squareup.retrofit2:retrofit:2.9.0"
+    api "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2"
+    api 'com.squareup.retrofit2:converter-gson:2.9.0'
+    api 'com.squareup.okio:okio:2.9.0'
+
+    // OKHttp Lib
+    api "com.squareup.okhttp3:okhttp:4.7.2"
+    api "com.squareup.okhttp3:logging-interceptor:4.2.2"
+    api "com.squareup.okhttp3:okhttp-urlconnection:4.7.2"
+}

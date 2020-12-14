@@ -1,0 +1,14 @@
+apply from: "../gradle/submodule.gradle"
+
+dependencies {
+    
+    api "androidx.room:room-runtime:$roomVersion"
+    kapt "androidx.room:room-compiler:$roomVersion"
+    // Kotlin Extensions and Coroutines support for Room
+    api "androidx.room:room-ktx:$roomVersion"
+    // Test helpers
+    testImplementation "androidx.room:room-testing:$roomVersion"
+
+    implementation "androidx.paging:paging-runtime:$pagingVersion"
+    testImplementation "androidx.paging:paging-common:$pagingVersion"
+}
